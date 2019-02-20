@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Restaurant le petit canard">
+    <!--===============================================================================================-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body class="animsition">
+
+<!-- Header -->
+<header>
+    <!-- Header desktop -->
+    <div class="wrap-menu-header gradient1 trans-0-4">
+        <div class="container h-full">
+            <div class="wrap_header trans-0-3">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img height="60px" src="images/icons/logo.png" alt="IMG-LOGO">
+                    </a>
+                </div>
+
+                <!-- Menu -->
+                <div class="wrap_menu p-l-45 p-l-0-xl">
+                    <nav class="menu">
+                        <ul class="main_menu">
+                            <li>
+                                <a href="index.html">Accueil</a>
+                            </li>
+
+                            <li>
+                                <a href="menu.html">Menu</a>
+                            </li>
+
+                            <li>
+                                <a href="gallery.html">Galerie</a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">Qui sommes nous</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Retrouvez nous</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Social -->
+                <div class="social flex-w flex-l-m p-r-20">
+                    <a target="blank"
+                       href="https://www.tripadvisor.fr/Restaurant_Review-g187147-d1094788-Reviews-Le_petit_canard-Paris_Ile_de_France.html"><i
+                            class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                    <a target="blank" href="https://www.facebook.com/pages/Le-Petit-Canard/154596641241603"><i
+                            class="fa fa-facebook m-l-21"
+                            aria-hidden="true"></i></a>
+                    <button class="btn-show-sidebar m-l-33 trans-0-4 d-lg-none"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Sidebar -->
+<aside class="sidebar trans-0-4">
+    <!-- Button Hide sidebar -->
+    <button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+
+    <!-- - -->
+    <ul class="menu-sidebar p-t-95 p-b-70">
+        <li class="t-center m-b-13">
+            <a href="index.html" class="txt19">Accueil</a>
+        </li>
+
+        <li class="t-center m-b-13">
+            <a href="menu.html" class="txt19">Menu</a>
+        </li>
+
+        <li class="t-center m-b-13">
+            <a href="gallery.html" class="txt19">Galerie</a>
+        </li>
+
+        <li class="t-center m-b-13">
+            <a href="about.html" class="txt19">Qui sommes nous</a>
+        </li>
+
+        <li class="t-center m-b-33">
+            <a href="contact.html" class="txt19">Retrouvez nous</a>
+        </li>
+    </ul>
+</aside>
+
+
+<!-- Title Page -->
+<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15 bg-gallery">
+    <h2 class="tit6 t-center">
+        Les clients nous envoies leurs photos
+    </h2>
+</section>
+
+
+<!-- Gallery -->
+<div class="section-gallery p-t-118 p-b-100 bg1-pattern">
+    <div class="wrap-label-gallery filter-tope-group size277 flex-w flex-sb-m m-l-r-auto flex-col-c-sm p-l-15 p-r-15 m-b-60">
+        <button class="label-gallery txt26 trans-0-4 is-actived" data-filter="*">
+            Toute les photos
+        </button>
+
+        <button class="label-gallery txt26 trans-0-4" data-filter=".resto">
+            Notre Restaurant
+        </button>
+
+        <button class="label-gallery txt26 trans-0-4" data-filter=".food">
+            Le Canard
+        </button>
+
+        <button class="label-gallery txt26 trans-0-4" data-filter=".dessert">
+            Nos Desserts
+        </button>
+
+    </div>
+
+    <div class="wrap-gallery isotope-grid flex-w p-l-25 p-r-25">
+        <!-- - -->
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/1.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/resto/1.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/10.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/resto/10.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/2.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/resto/2.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/3.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/resto/3.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/4.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/resto/4.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/5.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/resto/5.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/6.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/resto/6.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/7.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/resto/7.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/8.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/resto/8.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/9.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/resto/9.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/le-petit-canard-apercu-de-l-interieur-362c2.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search"
+                   href="images/gallery/resto/le-petit-canard-apercu-de-l-interieur-362c2.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom resto">
+            <img src="images/gallery/resto/le-petit-canard-vue-de-la-salle-24ed7.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search"
+                   href="images/gallery/resto/le-petit-canard-vue-de-la-salle-24ed7.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+            <img src="images/gallery/plats/1.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/plats/1.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+            <img src="images/gallery/plats/107.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/plats/107.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+            <img src="images/gallery/plats/130.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/plats/130.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+            <img src="images/gallery/plats/19.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/plats/19.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+            <img src="images/gallery/plats/21.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/plats/21.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+            <img src="images/gallery/plats/36.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/plats/36.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+            <img src="images/gallery/plats/39.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/plats/39.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+            <img src="images/gallery/plats/41.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/plats/41.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+            <img src="images/gallery/plats/48.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/plats/48.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+            <img src="images/gallery/plats/5.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/plats/5.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom food">
+            <img src="images/gallery/plats/91.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/plats/91.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom dessert">
+            <img src="images/gallery/desserts/1.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/desserts/1.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom dessert">
+            <img src="images/gallery/desserts/16.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/desserts/16.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom dessert">
+            <img src="images/gallery/desserts/18.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/desserts/18.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom dessert">
+            <img src="images/gallery/desserts/22.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/desserts/22.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom dessert">
+            <img src="images/gallery/desserts/25.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/desserts/25.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+        <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom dessert">
+            <img src="images/gallery/desserts/8.jpg" alt="IMG-GALLERY">
+
+            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                <a class="btn-show-gallery flex-c-m fa fa-search" href="images/gallery/desserts/8.jpg"
+                   data-lightbox="gallery"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg1">
+    <div class="container p-t-40">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <!-- - -->
+                <h4 class="txt13 m-b-33">
+                    Nous contacter
+                </h4>
+
+                <ul class="m-b-60">
+                    <li class="m-b-14 txt14">
+                        <i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
+                        <a target="blank" href="https://goo.gl/maps/Vr78cCbynQk">19, rue Henry Monnier 75009 Paris</a>
+                    </li>
+
+                    <li class="m-b-14 txt14">
+                        <i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
+                        <a href="tel:0149700795">(+33) 1 49 70 07 95</a>
+                    </li>
+
+                    <li class="m-b-14 txt14">
+                        <i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
+                        <a href="mailto:lepetitcanardparis@gmail.com">lepetitcanardparis@gmail.com</a>
+                    </li>
+                </ul>
+
+                <!-- - -->
+
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <h4 class="txt13 m-b-32">
+                    Horaires d'ouvertures
+                </h4>
+
+                <ul>
+                    <li class="txt14">
+                        De 12h à 14h du mardi au vendredi
+                    </li>
+
+                    <li class="txt14">
+                        Tous les soirs de 19h à 23h30
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="end-footer bg2">
+        <div class="container">
+            <div class="flex-sb-m flex-w p-t-10 p-b-10">
+                <div class="p-t-5 p-b-5">
+                    <a target="blank"
+                       href="https://www.tripadvisor.fr/Restaurant_Review-g187147-d1094788-Reviews-Le_petit_canard-Paris_Ile_de_France.html"
+                       class="fs-15 c-white"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                    <a target="blank" href="https://www.facebook.com/pages/Le-Petit-Canard/154596641241603"
+                       class="fs-15 c-white"><i
+                            class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="txt17 p-r-20 p-t-5 p-b-5">
+                    <span style="font-size : 10px;">Copyright &copy; 2018 All rights reserved | This website was inpired from <a
+                            style="font-size : 10px;" href="https://colorlib.com" target="_blank">Colorlib</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Back to top -->
+<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+</div>
+
+
+<!--===============================================================================================-->
+<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
+<script type="text/javascript">
+    $('.parallax100').parallax100();
+</script>
+<!--===============================================================================================-->
+<script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+<!--===============================================================================================-->
+<script type="text/javascript" src="vendor/isotope/isotope.pkgd.min.js"></script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
