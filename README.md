@@ -6,7 +6,14 @@ Projet de début de première année, le but étant de faire la refonte d'un sit
 
 **Table des matières :**
 
-[TOC]
+<!-- toc -->
+
+- [Pour commencer](#pour-commencer)
+- [Résultat final](#résultat-final)
+- [Auteurs](#auteurs)
+- [Ressources utilisées](#ressources-utilisées)
+
+<!-- tocstop -->
 
 # Pour commencer
 
